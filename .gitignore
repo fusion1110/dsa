@@ -1,1 +1,28 @@
+*
+!*.*
+!*/
+!Makefile
+
+# --- Build artifacts that DO have extensions ---
+*.o
+*.obj
 *.out
+core
+core.*
+vgcore.*
+
+# --- Neovim ---
+*.swp
+*.swo
+*.un~
+tags
+.netrwhist
+Session.vim
+
+# --- clangd / ccls (machine-specific LSP cache, regenerable) ---
+compile_commands.json
+.cache/
+.ccls-cache/
+
+# --- OS junk ---
+.DS_Store

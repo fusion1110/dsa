@@ -5,7 +5,8 @@ int main() {
   int a, b;
   cin >> a >> b;
 
-  if (a + b == 9 || a - b == 9 || a * b == 9 || a % b == 9)
+  /*a/b rounds down in c*/
+  if (a + b == 9 || a - b == 9 || a * b == 9 || a == b * 9)
     cout << "Nine\n";
   else
     cout << "Nein\n";
